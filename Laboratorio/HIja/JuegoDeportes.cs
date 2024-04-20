@@ -8,13 +8,13 @@ namespace LaboratorioProgra1.Laboratorio.HIja
 {
     internal class JuegoDeportes : VideoJuego
     {
-        private string equipos;
-        private string tiempo;
-        private string reglas;
+        private string reglas1;
+        private string tiempo1;
+        private string equipos1;
 
-        public JuegoDeportes (string reglas, string tiempo, string equipos)
+        public JuegoDeportes (string Reglas, string tiempo, string equipos)
             {
-            this.reglas = reglas;      
+            reglas = Reglas;      
             this.tiempo = tiempo;
             this.equipos = equipos;
             }
@@ -44,7 +44,10 @@ namespace LaboratorioProgra1.Laboratorio.HIja
             get { return equipos; }
             set { equipos = value; }
         }
-
+        public void Mostrarinformacion()
+        {
+            Console.WriteLine($"reglas:{reglas},equipos:{}")
+        }
     }
     
     
